@@ -68,17 +68,19 @@
 .card-body {
     margin: 0 auto;
     text-align: center;
+
     a {
         font-size: 15px;
         padding-top: 0px;
-        color:lightslategrey;
+        color: lightslategrey;
     }
+
     h4 {
         text-align: center;
         color: $color-primario;
     }
 }
 
-.container-fluid{
+.container-fluid {
     padding-top: 0px;
 }

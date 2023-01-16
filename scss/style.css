@@ -560,7 +560,8 @@ label {
   font-family: "Open Sans", sans-serif;
 }
 
-input, textarea {
+input,
+textarea {
   width: 380px;
   height: 27px;
   background: #c7c3c3;
