@@ -145,7 +145,7 @@
 .coreografos {
   width: fit-content;
   margin: 0 auto;
-  padding-top: 0px;
+  padding: 0px 40px 40px 0px;
 }
 
 .filter-button {
@@ -291,7 +291,7 @@ body {
 .center h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -325,7 +325,7 @@ body {
   font-weight: bolder;
   font-size: 27px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 20px;
   color: #353a3f;
 }

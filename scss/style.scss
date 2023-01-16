@@ -35,7 +35,7 @@ body {
 	margin: 0 auto;
 
 	h1 {
-		@include titulo(25px);
+		@include titulo(30px);
 	}
 
 	h2 {
@@ -56,7 +56,7 @@ body {
 		font-weight: bolder;
 		font-size: 27px;
 		text-align: center;
-		padding-top: 10px;
+		padding-top: 15px;
 		padding-bottom: 20px;
 		color: $color-primario;
 	}

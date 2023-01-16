@@ -24,7 +24,8 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">
-            <img src="images/playlisteros.svg" width="40" height="40" alt="logo playlisteros">
+            <img src="images/playlisteros.svg" width="40" height="40" alt="logo playlisteros"
+                title="imagen representativa del grupo de bailarines">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home </a>
+                    <a class="nav-link" href="index.html" title="inicio pagina playlisteros">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="videos.html">Videos</a>
@@ -44,15 +45,17 @@
                         PlayList
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#dixie">Dixiland</a>
-                        <a class="dropdown-item" href="#myhorse">My Horse Sallon</a>
+                        <a class="dropdown-item" href="#dixie" title="conoce dixieland">Dixiland</a>
+                        <a class="dropdown-item" href="#myhorse" title="conoce myhorse">My Horse Sallon</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="agenda.html">Agenda</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="agenda.html" title="agenda y eventos countrys">Agenda <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="coreosaprendidas.html">Últimas Aprendidas</a>
+                    <a class="nav-link" href="coreosaprendidas.html" title="ultimas coresografias aprendidas">Últimas
+                        Aprendidas</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -60,18 +63,22 @@
                         Coreografías
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="coreosmasbailadas.html">Nuevas Más Bailadas</a>
-                        <a class="dropdown-item" href="coreosclasicas.html">Clásicas Más Bailadas</a>
+                        <a class="dropdown-item" href="coreosmasbailadas.html" title="coreografias mas bailadas">Nuevas
+                            Más Bailadas</a>
+                        <a class="dropdown-item" href="coreosclasicas.html"
+                            title="coreografias clasicas mas bailadas">Clásicas Más Bailadas</a>
                         <a class="dropdown-item"
                             href="https://docs.google.com/spreadsheets/d/1m0Jfe7ncmElFzn16dsNNyv6luOeb-lcC/edit#gid=29128168"
                             target="_blank">Todas</a>
                     </div>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="coreografos.html">Coreógrafos <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="coreografos.html"
+                        target="conoce a los coreografos de todo el mundo">Coreógrafos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#contacto" target="_blank">Contacto</a>
+                    <a class="nav-link" href="index.html#contacto" target="_blank"
+                        title="formulario de contacto">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -83,63 +90,76 @@
                 <img class="swing" src="images/playlisteros-isologo.svg">
             </div>
         </div>
-    </main>
 
-    <section class="coreografos" id="coreografos">
-        <div class="container-fluid">
-            <div class="coreografos col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h2>Coreógrafos</h2>
-                <div class="center">
-                    <button class="filter-button" data-filter="all" "btn btn-dark">Todos</button>
-                    <button class="filter-button" data-filter="barcelona">Barcelona</button>
-                    <button class="filter-button" data-filter="madrid">Madrid</button>
-                    <button class="filter-button" data-filter="italia">Italia</button>
-                </div>
-            </div>
 
-            <div class="row row-cols-2 row-cols-md-5">
-
-                <div class="col mb-4 filter madrid">
-                    <div>
-                        <img class="img-fluid rounded-circle" src="images/coreografos/pol-ryan.webp"
-                            class="card-img-top" alt="pol ryan">
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>Pol Ryan</strong></h5>
-                            <a href="https://www.facebook.com/pol.f.ryan" alt="logo facebook"
-                                target="_blank">Facebook</a>
-                            <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
-                                target="_blank">Instagram</a>
-                        </div>
+        <section class="coreografos" id="coreografos">
+            <div class="container-fluid">
+                <div class="coreografos col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2>Coreógrafos</h2>
+                    <div class="center">
+                        <button class="filter-button" data-filter="all" "btn btn-dark">Todos</button>
+                        <button class="filter-button" data-filter="barcelona">Barcelona</button>
+                        <button class="filter-button" data-filter="madrid">Madrid</button>
+                        <button class="filter-button" data-filter="italia">Italia</button>
                     </div>
                 </div>
-                <div class="col mb-5 filter italia">
-                    <div>
-                        <img class="img-fluid rounded-circle" src="images/coreografos/david-villelas.webp"
-                            class="card-img-top" alt="davidb villelas">
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>David Villelas</strong></h5>
-                            <a href="https://www.facebook.com/Dv.Lizard" alt="logo facebook"
-                                target="_blank">Facebook</a>
-                            <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
-                                target="_blank">Instagram</a>
+
+                <div class="row row-cols-2 row-cols-md-5">
+
+                    <div class="col mb-4 filter madrid">
+                        <div>
+                            <img class="img-fluid rounded-circle" src="images/coreografos/pol-ryan.webp"
+                                class="card-img-top" alt="pol ryan">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Pol Ryan</strong></h5>
+                                <a href="https://www.facebook.com/pol.f.ryan" alt="logo facebook"
+                                    target="_blank">Facebook</a>
+                                <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
+                                    target="_blank">Instagram</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5 filter barcelona">
-                    <div>
-                        <img class="img-fluid rounded-circle" src="images/coreografos/gianmarco-rossato-johnny.webp"
-                            class="card-img-top" alt="rossato johnny">
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>Gianmarco Rossato Johnny</strong></h5>
-                            <a href="https://www.facebook.com/gianmarco.rossato.9" alt="logo facebook"
-                                target="_blank">Facebook</a>
-                            <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
-                                target="_blank">Instagram</a>
+                    <div class="col mb-5 filter italia">
+                        <div>
+                            <img class="img-fluid rounded-circle" src="images/coreografos/david-villelas.webp"
+                                class="card-img-top" alt="davidb villelas">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>David Villelas</strong></h5>
+                                <a href="https://www.facebook.com/Dv.Lizard" alt="logo facebook"
+                                    target="_blank">Facebook</a>
+                                <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
+                                    target="_blank">Instagram</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5">
-                    <div>
+                    <div class="col mb-5 filter barcelona">
+                        <div>
+                            <img class="img-fluid rounded-circle" src="images/coreografos/gianmarco-rossato-johnny.webp"
+                                class="card-img-top" alt="rossato johnny">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Gianmarco Rossato Johnny</strong></h5>
+                                <a href="https://www.facebook.com/gianmarco.rossato.9" alt="logo facebook"
+                                    target="_blank">Facebook</a>
+                                <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
+                                    target="_blank">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div>
+                            <img class="img-fluid rounded-circle" src="images/coreografos/pol-ryan.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Pol Ryan</strong></h5>
+                                <a href="https://www.facebook.com/pol.f.ryan" alt="logo facebook"
+                                    target="_blank">Facebook</a>
+                                <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
+                                    target="_blank">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 filter madrid">
+
                         <img class="img-fluid rounded-circle" src="images/coreografos/pol-ryan.webp"
                             class="card-img-top" alt="...">
                         <div class="card-body">
@@ -149,55 +169,11 @@
                             <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
                                 target="_blank">Instagram</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col mb-5 filter madrid">
 
-                    <img class="img-fluid rounded-circle" src="images/coreografos/pol-ryan.webp" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Pol Ryan</strong></h5>
-                        <a href="https://www.facebook.com/pol.f.ryan" alt="logo facebook" target="_blank">Facebook</a>
-                        <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
-                            target="_blank">Instagram</a>
                     </div>
 
-                </div>
 
-
-                <div class="col mb-5 filter madrid">
-                    <img class="img-fluid rounded-circle" src="images/coreografos/pol-ryan.webp" class="card-img-top"
-                        alt="pol ryann">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Pol Ryan</strong></h5>
-                        <a href="https://www.facebook.com/pol.f.ryan" alt="logo facebook" target="_blank">Facebook</a>
-                        <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
-                            target="_blank">Instagram</a>
-                    </div>
-                </div>
-                <div class="col mb-5 filter italia">
-                    <img class="img-fluid rounded-circle" src="images/coreografos/david-villelas.webp"
-                        class="card-img-top" alt="david villelas">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>David Villelas</strong></h5>
-                        <a href="https://www.facebook.com/Dv.Lizard" alt="logo facebook" target="_blank">Facebook</a>
-                        <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
-                            target="_blank">Instagram</a>
-                    </div>
-                </div>
-                <div class="col mb-5 filter italia">
-                    <img class="img-fluid rounded-circle" src="images/coreografos/gianmarco-rossato-johnny.webp"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Gianmarco Rossato Johnny</strong></h5>
-                        <a href="https://www.facebook.com/gianmarco.rossato.9" alt="logo facebook"
-                            target="_blank">Facebook</a>
-                        <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
-                            target="_blank">Instagram</a>
-                    </div>
-                </div>
-                <div class="col mb-5 filter italia">
-                    <div>
+                    <div class="col mb-5 filter madrid">
                         <img class="img-fluid rounded-circle" src="images/coreografos/pol-ryan.webp"
                             class="card-img-top" alt="pol ryann">
                         <div class="card-body">
@@ -208,22 +184,57 @@
                                 target="_blank">Instagram</a>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-5 filter madrid">
-                    <img class="img-fluid rounded-circle swing" src="images/coreografos/pol-ryan.webp"
-                        class="card-img-top" alt="pol ryan">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Pol Ryan</strong></h5>
-                        <a href="https://www.facebook.com/pol.f.ryan" alt="logo facebook" target="_blank">Facebook</a>
-                        <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
-                            target="_blank">Instagram</a>
+                    <div class="col mb-5 filter italia">
+                        <img class="img-fluid rounded-circle" src="images/coreografos/david-villelas.webp"
+                            class="card-img-top" alt="david villelas">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>David Villelas</strong></h5>
+                            <a href="https://www.facebook.com/Dv.Lizard" alt="logo facebook"
+                                target="_blank">Facebook</a>
+                            <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
+                                target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="col mb-5 filter italia">
+                        <img class="img-fluid rounded-circle" src="images/coreografos/gianmarco-rossato-johnny.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Gianmarco Rossato Johnny</strong></h5>
+                            <a href="https://www.facebook.com/gianmarco.rossato.9" alt="logo facebook"
+                                target="_blank">Facebook</a>
+                            <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
+                                target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="col mb-5 filter italia">
+                        <div>
+                            <img class="img-fluid rounded-circle" src="images/coreografos/pol-ryan.webp"
+                                class="card-img-top" alt="pol ryann">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Pol Ryan</strong></h5>
+                                <a href="https://www.facebook.com/pol.f.ryan" alt="logo facebook"
+                                    target="_blank">Facebook</a>
+                                <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
+                                    target="_blank">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 filter madrid">
+                        <img class="img-fluid rounded-circle swing" src="images/coreografos/pol-ryan.webp"
+                            class="card-img-top" alt="pol ryan">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Pol Ryan</strong></h5>
+                            <a href="https://www.facebook.com/pol.f.ryan" alt="logo facebook"
+                                target="_blank">Facebook</a>
+                            <a href="https://www.instagram.com/polryann/?hl=es" alt="logo instagram"
+                                target="_blank">Instagram</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
-
-        </div>
-    </section>
-
+        </section>
+    </main>
 
 
     <!-- Redes Footer -->
@@ -234,7 +245,8 @@
                 <a href="https://www.facebook.com/groups/206589586195979" target="_blank"> <img
                         src="images/btn/square-facebook.svg" alt="logo facebook"></a>
                 <a href="https://www.instagram.com/playlisterosintensos/" target="_blank"> <img
-                        src="images/btn/square-instagram.svg" alt="logo instagram"></a>
+                        src="images/btn/square-instagram.svg" alt="logo instagram"
+                        title="nuestro feed de instagram"></a>
             </div>
         </div>
 

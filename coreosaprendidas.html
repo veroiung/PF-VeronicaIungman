@@ -24,7 +24,8 @@
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="index.html">
-			<img src="images/playlisteros.svg" width="40" height="40" alt="logo playlisteros">
+			<img src="images/playlisteros.svg" width="40" height="40" alt="logo playlisteros"
+				title="imagen representativa del grupo de bailarines">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +34,7 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="index.html" title="inicio pagina playlisteros">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="videos.html">Videos</a>
@@ -44,15 +45,17 @@
 						PlayList
 					</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#dixie">Dixiland</a>
-						<a class="dropdown-item" href="#myhorse">My Horse Sallon</a>
+						<a class="dropdown-item" href="#dixie" title="conoce dixieland">Dixiland</a>
+						<a class="dropdown-item" href="#myhorse" title="conoce myhorse">My Horse Sallon</a>
 					</div>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="agenda.html">Agenda</a>
-				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="coreosaprendidas.html">Últimas Aprendidas <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="agenda.html" title="agenda y eventos countrys">Agenda <span
+							class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="coreosaprendidas.html" title="ultimas coresografias aprendidas">Últimas
+						Aprendidas</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -60,17 +63,22 @@
 						Coreografías
 					</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="coreosmasbailadas.html">Nuevas Más Bailadas</a>
-						<a class="dropdown-item" href="coreosclasicas.html">Clásicas Más Bailadas</a>
+						<a class="dropdown-item" href="coreosmasbailadas.html" title="coreografias mas bailadas">Nuevas
+							Más Bailadas</a>
+						<a class="dropdown-item" href="coreosclasicas.html"
+							title="coreografias clasicas mas bailadas">Clásicas Más Bailadas</a>
 						<a class="dropdown-item"
-							href="https://docs.google.com/spreadsheets/d/1m0Jfe7ncmElFzn16dsNNyv6luOeb-lcC/edit#gid=29128168" target="_blank">Todas</a>
+							href="https://docs.google.com/spreadsheets/d/1m0Jfe7ncmElFzn16dsNNyv6luOeb-lcC/edit#gid=29128168"
+							target="_blank">Todas</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="coreografos.html">Coreógrafos</a>
+					<a class="nav-link" href="coreografos.html"
+						target="conoce a los coreografos de todo el mundo">Coreógrafos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="contacto.html">Contacto</a>
+					<a class="nav-link" href="index.html#contacto" target="_blank"
+						title="formulario de contacto">Contacto</a>
 				</li>
 			</ul>
 		</div>
@@ -82,72 +90,77 @@
 				<img class="swing" src="images/playlisteros-isologo.svg">
 			</div>
 		</div>
-    </main>
 
+		<!-- Ultimas Coreos Aprendidas -->
+		<section id="aprendidas">
+			<div class="coreos">
+				<h2>Últimas coreografías aprendidas. Enero 2023.</h2>
 
-	<!-- Ultimas Coreos Aprendidas -->
-	<section id="aprendidas">
-		<div class="coreos">
-			<h2>Últimas coreografías aprendidas. Enero 2023.</h2>
-
-			<div class="row row-cols-1 row-cols-md-3">
-				<div class="col mb-4">
-					<div class="card h-100">
-						<img src="images/coreos/whiskey-nights.webp" class="card-img-top"
-							alt="coreografia whiskey nights">
-						<div class="card-body">
-							<h5 class="card-title"><strong>Whiskey Night</strong></h5>
-							<a href="https://www.youtube.com/watch?v=wOur83QbXv8" target="_blank">Explicación</a>
-							<p class="card-text">Intro= 56 + 4 beats / 64 tiempos, <br>2 paredes, 3 restarts, <br>2
-								Tag's, final = 6 tiempos.<br>
-								<strong>Coreógrafa, Montse Moscardó.</strong>
-							</p>
-							<a href="https://open.spotify.com/track/5ZVNbupHdY21VlzbUOTIdy?si=755e1ca98e834894" target="_blank">Whiskey
-								Thinks I Am</a>
-							<p class="cardtexto">Jade Ragleson / Albúm - Honkytonk Revival (2021)</p>
+				<div class="row row-cols-1 row-cols-md-3">
+					<div class="col mb-4">
+						<div class="card h-100">
+							<img src="images/coreos/whiskey-nights.webp" class="card-img-top"
+								alt="coreografia whiskey nights" title="coreografia de pol ryan">
+							<div class="card-body">
+								<h4 class="card-title"><strong>Whiskey Night</strong></h4>
+								<a href="https://www.youtube.com/watch?v=wOur83QbXv8" target="_blank">Explicación</a>
+								<p class="card-text">Intro= 56 + 4 beats / 64 tiempos, <br>2 paredes, 3 restarts, <br>2
+									Tag's, final = 6 tiempos.<br>
+									<strong>Coreógrafa, Montse Moscardó.</strong>
+								</p>
+								<a href="https://open.spotify.com/track/5ZVNbupHdY21VlzbUOTIdy?si=755e1ca98e834894"
+									target="_blank">Whiskey
+									Thinks I Am</a>
+								<p class="cardtexto">Jade Ragleson / Albúm - Honkytonk Revival (2021)</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-4">
+						<div class="card h-100">
+							<img src="images/coreos/the-lovers.webp" class="card-img-top" alt="coreografia the lovers"
+								title="coreografia de jonni rosatto">
+							<div class="card-body">
+								<h4 class="card-title"><strong>The Lovers</strong></h4>
+								<a href="https://www.youtube.com/watch?v=LWNeDajL1Yc" target="_blank">Explicación</a>
+								<p class="card-text">Parte A 32 tiempos + Parte B 32 tiempos <br>2 paredes + Tag 20
+									tiempos.<br>
+									<strong>Coreógrafo, Johnny Gianmarco Rossato (sept 2022).</strong>
+								</p>
+								<a href="https://open.spotify.com/track/5ZVNbupHdY21VlzbUOTIdy?si=755e1ca98e834894"
+									target="_blank">Year of
+									the young</a>
+								<p class="cardtexto">Smith & Thell single & alúum - Pixie's Parasol - (2020)</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-4">
+						<div class="card h-100">
+							<img src="images/coreos/hunting-dog.webp" class="card-img-top" alt="coreografia hunting dog"
+								title="coreografia de david villelas">
+							<div class="card-body">
+								<h4 class="card-title"><strong>Hunting Dog</strong></h4>
+								<a href="https://www.youtube.com/watch?v=W1cxy3AWovY&t=4s"
+									target="_blank">Explicación</a>
+								<p class="card-text">Parte A 32tiempos, Parte B 32 tiempos, <br>Tag1 8tiempos, Tag2 32
+									tiempos.<br>
+									<strong>Coreográfo, David Vilellas (dic 2022).</strong>
+								</p>
+								<a href="https://open.spotify.com/track/5ZVNbupHdY21VlzbUOTIdy?si=755e1ca98e834894"
+									target="_blank">That
+									Dog'll Hunt </a>
+								<p class="cardtexto">Walker Hayes, single (2022).</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col mb-4">
-					<div class="card h-100">
-						<img src="images/coreos/the-lovers.webp" class="card-img-top" alt="coreografia the lovers">
-						<div class="card-body">
-							<h5 class="card-title"><strong>The Lovers</strong></h5>
-							<a href="https://www.youtube.com/watch?v=LWNeDajL1Yc" target="_blank">Explicación</a>
-							<p class="card-text">Parte A 32 tiempos + Parte B 32 tiempos <br>2 paredes + Tag 20
-								tiempos.<br>
-								<strong>Coreógrafo, Johnny Gianmarco Rossato (sept 2022).</strong>
-							</p>
-							<a href="https://open.spotify.com/track/5ZVNbupHdY21VlzbUOTIdy?si=755e1ca98e834894" target="_blank">Year of
-								the young</a>
-							<p class="cardtexto">Smith & Thell single & alúum - Pixie's Parasol - (2020)</p>
-						</div>
-					</div>
-				</div>
-				<div class="col mb-4">
-					<div class="card h-100">
-						<img src="images/coreos/hunting-dog.webp" class="card-img-top" alt="coreografia hunting dog">
-						<div class="card-body">
-							<h5 class="card-title"><strong>Hunting Dog</strong></h5>
-							<a href="https://www.youtube.com/watch?v=W1cxy3AWovY&t=4s" target="_blank">Explicación</a>
-							<p class="card-text">Parte A 32tiempos, Parte B 32 tiempos, <br>Tag1 8tiempos, Tag2 32
-								tiempos.<br>
-								<strong>Coreográfo, David Vilellas (dic 2022).</strong>
-							</p>
-							<a href="https://open.spotify.com/track/5ZVNbupHdY21VlzbUOTIdy?si=755e1ca98e834894" target="_blank">That
-								Dog'll Hunt </a>
-							<p class="cardtexto">Walker Hayes, single (2022).</p>
-						</div>
-					</div>
-				</div>
+
 			</div>
-			
-		</div>
-	</section>
+		</section>
+	</main>
 	<!-- Ultimas Coreos Aprendidas FIN -->
 
 
-    <!-- Redes Footer -->
+	<!-- Redes Footer -->
 	<footer>
 
 		<div class="center">
@@ -155,7 +168,8 @@
 				<a href="https://www.facebook.com/groups/206589586195979" target="_blank"> <img
 						src="images/btn/square-facebook.svg" alt="logo facebook"></a>
 				<a href="https://www.instagram.com/playlisterosintensos/" target="_blank"> <img
-						src="images/btn/square-instagram.svg" alt="logo instagram"></a>
+						src="images/btn/square-instagram.svg" alt="logo instagram"
+						title="nuestro feed de instagram"></a>
 			</div>
 		</div>
 
@@ -183,29 +197,33 @@
 	<!-- Redes Footer FIN -->
 
 	<!-- Histats.com -->
-	<script type="text/javascript">var _Hasync = _Hasync || [];
+	<script type="text/javascript">
+		var _Hasync = _Hasync || [];
 		_Hasync.push(['Histats.start', '1,4731765,4,0,0,0,00010000']);
 		_Hasync.push(['Histats.fasi', '1']);
 		_Hasync.push(['Histats.track_hits', '']);
 		(function () {
-			var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+			var hs = document.createElement('script');
+			hs.type = 'text/javascript';
+			hs.async = true;
 			hs.src = ('//s10.histats.com/js15_as.js');
 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-		})();</script>
+		})();
+	</script>
 	<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4731765&101" alt="contador de visitas"
 				border="0"></a></noscript>
 	<!-- Histats.com  FIN  -->
 
 	<!--Librerias Bootstraps-->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-		crossorigin="anonymous"></script>
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-		integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-		crossorigin="anonymous"></script>
+		integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 	<!--Librerias Bootstraps FIN  -->
 </body>
