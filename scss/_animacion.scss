@@ -1,0 +1,153 @@
+/* animacion logo */
+.swing {
+	animation: swing ease-in-out 1s infinite alternate;
+}
+
+@keyframes swing {
+	0% {
+		transform: rotate(5deg);
+	}
+
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+/* animacion logo fin */
+
+/* coreos nuevas mas bailadas */
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 10px;
+}
+
+.coreos-nuevas {
+	height: 550px;
+	width: calc(100%/7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: width 0.75s;
+}
+
+.coreos-nuevas:hover,
+.coreos-nuevas:focus {
+	width: 100%;
+}
+
+.flex-row .coreos-nuevas {
+	margin: 3px;
+}
+
+.coreos-nuevas h3 {
+	font-weight: 500;
+	transform: rotate(-90deg);
+	font-size: 1 1em;
+	color: white;
+	transition: transform 0.15s;
+	margin: 0 auto;
+}
+
+.coreos-nuevas:hover h3 {
+	transform: revert;
+	color: white;
+}
+
+.coreos-nuevas span {
+	background-color: revert;
+	color: white;
+	margin: 0 auto;
+	visibility: hidden;
+	transition: visibility 1s, opacity 1s;
+	opacity: 0;
+}
+
+.coreos-nuevas:hover span {
+	display: revert;
+	visibility: visible;
+	opacity: 1;
+}
+
+.coreos-nuevas a {
+	background-color: revert;
+	color: black;
+	margin: 0 auto;
+	visibility: hidden;
+	transition: visibility 1s, opacity 1s;
+	opacity: 0;
+}
+
+.coreos-nuevas:hover a {
+	display: revert;
+	visibility: visible;
+	font-size: 17px;
+	font-weight: 300;
+	opacity: 2;
+}
+
+@media only screen and (max-width: 900px) {
+	.flex-row {
+		display: flex;
+		flex-direction: column !important;
+		height: 600px;
+		width: 100%
+	}
+
+	.coreos-nuevas {
+		width: 100%;
+		height: calc(100%/7);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		transition: height 0.75s;
+	}
+
+	.coreos-nuevas:hover,
+	.coreos-nuevas:focus {
+		height: 100%;
+		width: 100%;
+	}
+
+	.flex-column .coreos-nuevas {
+		margin: 3px;
+	}
+
+	.coreos-nuevas h3 {
+		color: white;
+		font-weight: 600;
+		font-size: 1, 3em;
+		transition: transform 0.15s;
+		transform: revert;
+		margin: 0 auto;
+		padding: 5px;
+	}
+
+	.coreos-nuevas span {
+		background-color: revert;
+		color: white;
+		visibility: hidden;
+		transition: visibility 1s, opacity 1s;
+		opacity: 0;
+	}
+
+	.coreos-nuevas:hover span {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.uno {
+	background-color: #24650b;
+}
+
+.dos {
+	background-color: #bf9f1f;
+}
+
+.tres {
+	background-color: #a21627;
+}
+
+/* coreos nuevas mas bailadas fin */

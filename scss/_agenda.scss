@@ -1,0 +1,43 @@
+.agenda{
+    width: fit-content;
+	margin: 0 auto;
+    padding: 50px 50px;
+
+    a{
+        font-family: $tipografia;
+		font-weight: bolder;
+		font-size: 15px;
+    }
+    
+}
+
+.btninfo{
+    font-size: 15px;
+    background-color:#353a3f;
+    border-radius: 7px;
+	padding: 10px 15px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.btninfo:hover,
+.btninfo:focus,
+.btninfo.active{
+    color: $color-primario;
+    border: 2px solid $color-primario;
+	outline:none;
+    background: transparent;
+    margin-bottom: 6px;
+}
+
+.container-fluid {
+	width: fit-content;
+	margin: 0 auto;
+    padding-top: 5px;
+
+	h2 {
+		@include titulo(27px);
+	}
+}

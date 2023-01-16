@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+
+$color-primario:  #353a3f;
+$tipografia: "Open Sans", sans-serif;
+
+@mixin titulo ($tamano){
+	font-family: "Open Sans", sans-serif;
+	font-weight: bolder;
+	font-size: $tamano;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #353a3f;
+}
+
+@import "./animacion";
+@import "./coreografos";
+@import "./agenda";
+@import "./variables";
+
+
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.center {
+	width: fit-content;
+	margin: 0 auto;
+
+	h1 {
+		@include titulo(25px);
+	}
+
+	h2 {
+		@include titulo(27px);
+	}
+
+	h3 {
+		@include titulo(15px);
+	}
+}
+
+.coreos {
+	padding: 15px 20px 10px 20px;
+	width: 100%;
+
+	h3 {
+		font-family: $tipografia;
+		font-weight: bolder;
+		font-size: 25px;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		color:$color-primario;
+	}
+
+	h2 {
+		font-family: $tipografia;
+		font-weight: bolder;
+		font-size: 25px;
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
+}
+
+.niveles p {
+	font-family: $tipografia;
+	font-weight: 800;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 5px;
+	margin: 0 auto;
+}
+
+.carouselbox {
+	padding-bottom: 10px;
+}
+
+.cardtexto p {
+	font-size: 5px;
+	font-style: italic;
+}
+
+.parallax-dixie {
+	background-image: url("../images/fotos/dixieland.jpg");
+	height: 250px;
+	margin: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 30px;
+	margin-bottom: 10px;
+
+	h3 {
+		font-family: $tipografia;
+		font-weight: 600;
+		font-size: 35px;
+		color: #fff;
+		text-align: center;
+	}
+
+	p {
+		font-family: $tipografia;
+		font: weight 30px;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	a {
+		font-family: $tipografia;
+		font: weight 40px;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.parallax-myhorse {
+	background-image: url("../images/fotos/myhorse.jpg");
+	height: 250px;
+	margin: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 30px;
+
+	h3 {
+		font-family: $tipografia;
+		font-weight: 600;
+		font-size: 35px;
+		color: #fff;
+		text-align: center;
+	}
+
+	p {
+		font-family: $tipografia;
+		font: weight 40px;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	a {
+		font-family: $tipografia;
+		font: weight 40px;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+
+.galeria {
+	height: auto;
+	width: 100%;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: repeat(3, 200px);
+}
+
+.item {
+	height: 400px;
+	width: 100%;
+	filter: grayscale(100%);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	position: relative;
+
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.item-text {
+		font-family: $tipografia;
+		font-size: 30px;
+		font-weight: 600;
+		color: #fff;
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		width: 100%;
+		text-align: center;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.item:hover {
+	filter: grayscale(0%);
+
+	img {
+		transition: all 0.8s;
+		transform: scale(1.05);
+	}
+	
+}
+
+@media only screen and (max-width: 768px) {
+	.galeria {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(9);
+		width: 100%;
+	}
+
+}
+
+.contain-content {
+	height: fit-content;
+}
+
+.subir {
+	padding: 30px;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 5px;
+	border-radius: 50%;
+
+}
+
+.logo {
+	padding-top: 80px;
+	size: inherit;
+	width: 70%;
+}
+
+.redes {
+	p {
+		font-family: $tipografia;
+		color: dimgrey;
+		font-weight: 400;
+		padding-bottom: 30px;
+
+	}
+}
+
+.fullWidth {
+	width: 700px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.footer {
+	font-family: $tipografia;
+	font: weight 10px;
+	color: black;
+	text-align: center;
+}
+
+form {
+	margin: 0 auto;
+	width: 400px;
+}
+
+.datos {
+	a {
+		font-size: 15px;
+		padding-bottom: 50px;
+	}
+}
+
+label {
+	display: block;
+	margin-top: 20px;
+	letter-spacing: 1px;
+}
+
+.principal {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	color: black;
+	font-family: $tipografia;
+}
+
+input, textarea {
+	width: 380px;
+	height: 27px;
+	background: #c7c3c3;
+	border: 2px solid #857878;
+	padding: 10px;
+	margin-top: 5px;
+	font-size: 15px;
+	color: black;
+}
+
+textarea {
+	height: 230px;
+	font-family: $tipografia;
+}
+
+#submit {
+	width: 95px;
+	height: 40px;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+}
+
+
+.p {
+	font: 2em;
+	text-align: center;
+}
+
+
+.pag img {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	margin-top: 25px;
+}
+
+.redes {
+	margin-top: 10px;
+}
+
+.pag img:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+.video {
+	width: fit-content;
+	margin: auto;
+	padding-bottom: 5px;
+
+	h3 {
+		font-family: $tipografia;
+		font-weight: bolder;
+		padding-top: 5px;
+		font-size: 20px;
+		text-align: center;
+		margin: 0 auto;
+		color:$color-primario;
+	}
+
+	p {
+		font-family: $tipografia;
+		font-weight: bolder;
+		padding-bottom: 30px;
+		font-size: 20px;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+#whatsapp {
+	position: fixed;
+	right: 10px;
+	bottom: 20px;
+	display: block;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	z-index: 1000;
+}
+
+.btn {
+	margin-bottom: 0px;
+}
+
