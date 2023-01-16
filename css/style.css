@@ -42,7 +42,6 @@
   font-weight: 500;
   transform: rotate(-90deg);
   font-size: 1 1em;
-  color: white;
   transition: transform 0.15s;
   margin: 0 auto;
 }
@@ -146,8 +145,7 @@
 .coreografos {
   width: fit-content;
   margin: 0 auto;
-  padding-top: 10px;
-  padding: 40px 40px;
+  padding-top: 0px;
 }
 
 .filter-button {
@@ -218,31 +216,15 @@
   padding-top: 0px;
   color: lightslategrey;
 }
-.card-body h5 {
+.card-body h4 {
   text-align: center;
   color: #353a3f;
 }
 
-/*
-.coreorafos{
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 25px;
+.container-fluid {
+  padding-top: 0px;
+}
 
-    h4  {
-
-        font-family: $tipografia;
-        font-size: 20px;
-        color:$color-primario;
-    }
-    a   {
-        font-family: $tipografia;
-        font-size: 15px;
-        color:$color-primario;
-
-    }
-}*/
-/* Coreografos fin */
 .agenda {
   width: fit-content;
   margin: 0 auto;
@@ -335,8 +317,17 @@ body {
 }
 
 .coreos {
-  padding: 15px 20px 10px 20px;
   width: 100%;
+  margin: 0 auto;
+}
+.coreos h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 27px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #353a3f;
 }
 .coreos h3 {
   font-family: "Open Sans", sans-serif;
@@ -346,14 +337,6 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
   color: #353a3f;
-}
-.coreos h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bolder;
-  font-size: 25px;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 25px;
 }
 
 .niveles p {

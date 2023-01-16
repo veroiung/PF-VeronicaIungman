@@ -3,8 +3,7 @@
 .coreografos {
     width: fit-content;
     margin: 0 auto;
-    padding-top: 10px;
-    padding: 40px 40px;
+    padding-top: 0px;
 }
 
 .filter-button {
@@ -74,33 +73,12 @@
         padding-top: 0px;
         color:lightslategrey;
     }
-    h5 {
+    h4 {
         text-align: center;
         color: $color-primario;
     }
 }
 
-
-/*
-.coreorafos{
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 25px;
-
-    h4  {
-    
-        font-family: $tipografia;
-        font-size: 20px;
-        color:$color-primario;
-    }
-    a   {
-        font-family: $tipografia;
-        font-size: 15px;
-        color:$color-primario;
-
-    }
-}*/
-
-
-
-/* Coreografos fin */
+.container-fluid{
+    padding-top: 0px;
+}

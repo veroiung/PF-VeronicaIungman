@@ -16,9 +16,6 @@ $tipografia: "Open Sans", sans-serif;
 @import "./animacion";
 @import "./coreografos";
 @import "./agenda";
-@import "./variables";
-
-
 
 html,
 body {
@@ -50,16 +47,17 @@ body {
 }
 
 .coreos {
-	padding: 15px 20px 10px 20px;
 	width: 100%;
+	margin: 0 auto;
 
 	h2 {
 		font-family: $tipografia;
 		font-weight: bolder;
-		font-size: 25px;
+		font-size: 27px;
 		text-align: center;
-		padding-top: 40px;
-		padding-bottom: 25px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		color:$color-primario;
 	}
 
 	h3 {
