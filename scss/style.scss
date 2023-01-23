@@ -185,7 +185,7 @@ body {
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
-		filter: brightness(70%);
+		filter: brightness(80%);
 	}
 	
 
@@ -205,25 +205,13 @@ body {
 		p {
 			margin: 0;
 		}
-
-		// a {
-		// 	font-size: 20px;
-		// 	text-decoration: underline;
-		// 	font-weight: 500;
-		// 	color: #fff;
-		// }
-
-		// a:hover {
-		// 	color: #c2c2c2;
-		// }
-
+		
 		a {
 			font-size: 15px;
 			background-color: #fff;
 			font-weight: 600;
-			// text-transform: uppercase;
-			padding: 2px 8px;
-			border-radius: 16px;
+			padding: 4px 10px;
+			border-radius: 15px;
 			color: #222222;
 		}
 

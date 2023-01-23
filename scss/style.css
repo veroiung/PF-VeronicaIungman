@@ -461,7 +461,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(70%);
+  filter: brightness(80%);
 }
 .item .item-text {
   font-family: "Open Sans", sans-serif;
@@ -483,8 +483,8 @@ body {
   font-size: 15px;
   background-color: #fff;
   font-weight: 600;
-  padding: 2px 8px;
-  border-radius: 16px;
+  padding: 4px 10px;
+  border-radius: 15px;
   color: #222222;
 }
 .item .item-text a:hover {
