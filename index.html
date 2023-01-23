@@ -183,23 +183,23 @@
 	<hr class="my-5">
 
 	<!-- Contacto -->
-	<form action="sendemail.php" method="post" id="contacto">
+	<form method="post" action="sendemail.php" id="contacto">
 		<div class="center">
 			<h2>Escribinos</h2>
 		</div>
 		<div class="form-outline mb-4">
 			<label class="form-label" for="Nombre">Nombre</label>
-			<input type="text" name="name" id="name" class="form-control" placeholder="Nombre y Apellido"  required="name" />
+			<input type="text" name="name" id="name" class="form-control" placeholder="Nombre" />
 		</div>
 
 		<div class="form-outline mb-4">
 			<label class="form-label" for="email">Email</label>
-			<input type="email" name="email" id="email" class="form-control" placeholder="Email" required="email" />
+			<input type="email" name="email" id="email" class="form-control" placeholder="Email" />
 		</div>
 
 		<div class="form-outline mb-4">
 			<label class="form-label" for="asunto">Asunto</label>
-			<input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto" required="asunto" />
+			<input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto" />
 		</div>
 
 		<div class="form-outline mb-4">
@@ -207,7 +207,7 @@
 			<textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje"></textarea>
 		</div>
 
-		<button type="submit" class="btn btn-primary btn-dark btn-block mb-4">Enviar</button>
+		<button type="submit" value="Enviar Mensaje" class="btn btn-primary btn-dark btn-block mb-4">Enviar</button>
 
 	</form>
 	<!-- Contacto FIN -->
