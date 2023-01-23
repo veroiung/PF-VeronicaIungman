@@ -18,7 +18,7 @@ if ((strlen($name) > 0) and (strlen($email) > 0) and (strlen($asunto) > 0)) {
     . "Email: $email\n"
     . "Asunto: $asunto\n"
     . "Mensaje: $message\n"
-     "\n";
+    . "\n";
  
 if (@mail($email_to, $subject, $contenido, $header)) {
  
